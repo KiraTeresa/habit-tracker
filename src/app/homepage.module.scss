@@ -1,0 +1,25 @@
+.small {
+  font-size: var(--font-size-s);
+  border: var(--border-thin) solid var(--foreground-color);
+  border-radius: var(--border-radius);
+}
+
+.regular {
+  font-size: var(--font-size-regular);
+  border: var(--border-regular) solid var(--error-color);
+  border-radius: var(--border-radius);
+}
+
+.medium {
+  font-size: var(--font-size-m);
+}
+
+.large {
+  font-size: var(--font-size-l);
+}
+
+.extraLarge {
+  font-size: var(--font-size-xl);
+  border: var(--border-thick) solid var(--success-color);
+  border-radius: var(--border-radius);
+}
