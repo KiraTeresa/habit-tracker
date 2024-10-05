@@ -1,8 +1,5 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <main>Main</main>
-      <footer>Footer</footer>
-    </div>
+    <div>This is the Homepage of MindSet, will only be needed for login.</div>
   );
 }

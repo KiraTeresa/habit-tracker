@@ -18,6 +18,7 @@
 		"no-console": "warn",
 		"no-unneeded-ternary": "warn",
 		"no-useless-return": "warn",
-		"prefer-promise-reject-errors": "error"
+		"prefer-promise-reject-errors": "error",
+		"react/no-unescaped-entities": "off"
 	}
 }
