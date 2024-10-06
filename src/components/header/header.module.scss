@@ -1,9 +1,16 @@
 .header {
   display: flex;
   justify-content: space-between;
+  width: 100vw;
+  padding: var(--padding-s);
+  position: relative;
+}
 
-  > a {
-    text-decoration: none;
-    color: inherit;
-  }
+.logoWrapper {
+  display: flex;
+  gap: var(--padding-s)
+}
+
+.burger {
+  cursor: pointer;
 }

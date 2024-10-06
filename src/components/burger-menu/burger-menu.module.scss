@@ -1,0 +1,24 @@
+.burgerList {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl);
+  margin: 0;
+  background-color: var(--success-color);
+  width: 100%;
+  max-width: 100vw;
+  min-height: 50vh;
+  list-style: none;
+  gap: var(--padding-regular);
+
+  > li {
+    width: fit-content;
+  }
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: var(--error-color);
+}
