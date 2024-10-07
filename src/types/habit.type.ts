@@ -17,6 +17,7 @@ type HabitVariantType = {
 
 type TrackingStatsType = {
   day: DayType;
+  date: string;
   count: number;
 };
 
