@@ -1,24 +1,27 @@
 {
-	"extends": [
-		"next/core-web-vitals",
-		"next/typescript"
-	],
-	"rules": {
-		"max-len": [
-			"warn",
-			{
-				"code": 80,
-				"ignoreComments": true,
-				"ignoreUrls": true,
-				"ignoreStrings": true,
-				"ignoreRegExpLiterals": true
-			}
-		],
-		"no-unused-vars": "warn",
-		"no-console": "warn",
-		"no-unneeded-ternary": "warn",
-		"no-useless-return": "warn",
-		"prefer-promise-reject-errors": "error",
-		"react/no-unescaped-entities": "off"
-	}
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "rules": {
+    "max-len": [
+      "warn",
+      {
+        "code": 80,
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "no-unneeded-ternary": "warn",
+    "no-useless-return": "warn",
+    "prefer-promise-reject-errors": "error",
+    "react/no-unescaped-entities": "off"
+  },
+  "ignorePatterns": [
+    ".github/*"
+  ]
 }
