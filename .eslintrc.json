@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "next/typescript"
-  ],
+  "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
     "max-len": [
       "warn",
@@ -21,7 +18,5 @@
     "prefer-promise-reject-errors": "error",
     "react/no-unescaped-entities": "off"
   },
-  "ignorePatterns": [
-    ".github/*"
-  ]
+  "ignorePatterns": [".github/*"]
 }

@@ -1,62 +1,62 @@
 :root {
-    /* COLORS */
-    --text-color: #4A4947;
-    --background-color: #ECDFCC;
-    --foreground-color: #FCFAEE;
-    --success-color: #A5B68D;
-    --error-color: #DA8359;
+  /* COLORS */
+  --text-color: #4a4947;
+  --background-color: #ecdfcc;
+  --foreground-color: #fcfaee;
+  --success-color: #a5b68d;
+  --error-color: #da8359;
 
-    /* FONT SIZES */
-    --font-size-s: 0.75rem;
-    --font-size-regular: 1rem;
-    --font-size-m: 1.25rem;
-    --font-size-l: 1.5rem;
-    --font-size-xl: 2rem;
+  /* FONT SIZES */
+  --font-size-s: 0.75rem;
+  --font-size-regular: 1rem;
+  --font-size-m: 1.25rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
 
-    /* BORDER */
-    --border-radius: 1rem;
-    --border-thin: 1px;
-    --border-regular: 2px;
-    --border-thick: 3px;
+  /* BORDER */
+  --border-radius: 1rem;
+  --border-thin: 1px;
+  --border-regular: 2px;
+  --border-thick: 3px;
 
-    /* MEDIA BREAKPOINTS (min values) */
-    --breakpoint-s: 600x;
-    --breakpoint-m: 768px;
-    --breakpoint-l: 992px;
-    --breakpoint-xl: 1200px;
+  /* MEDIA BREAKPOINTS (min values) */
+  --breakpoint-s: 600x;
+  --breakpoint-m: 768px;
+  --breakpoint-l: 992px;
+  --breakpoint-xl: 1200px;
 
-    /* PADDINGS */
-    --padding-s: 0.5rem;
-    --padding-regular: 1rem;
-    --padding-m: 1.25rem;
-    --padding-l: 1.5rem;
-    --padding-xl: 4rem;
+  /* PADDINGS */
+  --padding-s: 0.5rem;
+  --padding-regular: 1rem;
+  --padding-m: 1.25rem;
+  --padding-l: 1.5rem;
+  --padding-xl: 4rem;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        /* COLORS */
-        --text-color: #FCFAEE;
-        --background-color: #0B192C;
-        --foreground-color: #BFCFE7;
-        --success-color: #1E3E62;
-        --error-color: #FF6500;
-    }
+  :root {
+    /* COLORS */
+    --text-color: #fcfaee;
+    --background-color: #0b192c;
+    --foreground-color: #bfcfe7;
+    --success-color: #1e3e62;
+    --error-color: #ff6500;
+  }
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    color: var(--text-color);
-    background: var(--background-color);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--font-size-m);
-    margin: 0;
+  color: var(--text-color);
+  background: var(--background-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--font-size-m);
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
