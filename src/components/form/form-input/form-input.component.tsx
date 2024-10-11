@@ -6,5 +6,5 @@ type FormInputProps = {
 };
 
 export const FormInput = ({ type = 'text', id }: FormInputProps) => (
-  <input type={type} id={id} className={classes.formInput}></input>
+  <input type={type} id={id} className={classes.formInput} />
 );
