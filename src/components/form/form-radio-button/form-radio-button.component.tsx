@@ -9,8 +9,8 @@ export const FormRadioButton = ({
   label,
   groupName,
 }: FormRadioButtonProps) => (
-  <>
+  <div>
     <input type='radio' id={id} name={groupName} />
     <label htmlFor={id}>{label}</label>
-  </>
+  </div>
 );
