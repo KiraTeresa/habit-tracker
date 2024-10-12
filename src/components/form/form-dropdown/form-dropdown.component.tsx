@@ -6,7 +6,7 @@ type FormDropdownProps = {
   rowLabel: string;
 };
 
-type OptionsType = {
+export type OptionsType = {
   value: string;
   label: string;
 };
