@@ -6,10 +6,11 @@ import { DAYS } from '@/constants/days-option.const';
 import { REMINDER_TIMES } from '@/constants/reminder-times-option.const';
 import { FormCheckbox } from '@/components/form/form-checkbox/form-checkbox.component';
 import { FormColorPicker } from '@/components/form/form-color-picker/form-color-picker.component';
+import classes from './create-form.module.scss';
 
 export const CreateForm = () => {
   return (
-    <form>
+    <form className={classes.form}>
       <h3>New Habit</h3>
       <FormInput id='title' rowLabel='Title' />
       <FormGroup id='goal' label='Goal'>
@@ -30,17 +31,12 @@ export const CreateForm = () => {
             label='yes'
             groupName='predefinedDays'
           />
-          <FormGroup id='checkedPredefineDays' label=''>
-            {DAYS.map(day => (
-              <FormCheckbox
-                key={day.value}
-                id={day.value}
-                label={day.label}
-                rowLabel=''
-              />
-            ))}
-          </FormGroup>
         </>
+      </FormGroup>
+      <FormGroup id='checkedPredefineDays' label='which days shall it be?'>
+        {DAYS.map(day => (
+          <FormCheckbox key={day.value} id={day.value} label={day.label} />
+        ))}
       </FormGroup>
       <FormGroup id='reminder' label='Remind me?'>
         <>
@@ -52,12 +48,13 @@ export const CreateForm = () => {
             rowLabel='time'
           />
           <FormDropdown id='remind-days' options={DAYS} rowLabel='on' />
+          <button type='button'>+ add reminder</button>
         </>
       </FormGroup>
       <h3>Variants (optional)</h3>
       <FormInput id='variant' rowLabel='Title' />
       <button type='button'>add</button>
-      <FormCheckbox id='not-habit' label='this is a not-habit' rowLabel='' />
+      <FormCheckbox id='not-habit' label='this is a not-habit' />
       <FormColorPicker
         id='color-picker'
         name='color-picker'
